@@ -12,6 +12,10 @@ import com.tek.ordercalculator.service.ShopCartService;
 import com.tek.ordercalculator.service.ShopCartServiceImpl;
 import com.tek.ordercalculator.util.PriceCalculator;
 
+/**
+ * @author Sivaramakrishna
+ *
+ */
 public class PriceCalculatorTest {
 
 	private static ShopCartService shopCartService = new ShopCartServiceImpl();

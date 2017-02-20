@@ -14,7 +14,7 @@ import com.tek.ordercalculator.util.PriceCalculator;
 public class ShopCartServiceImpl implements ShopCartService {
 
 	private static final Logger log = LoggerFactory.getLogger(ShopCartServiceImpl.class); 
-	ShopCart cart;
+	public ShopCart cart;
 	
 	
 	/**
@@ -37,7 +37,6 @@ public class ShopCartServiceImpl implements ShopCartService {
 	 * Method to check out order
 	 * 
 	 */
-
 	public void checkOutOrder() throws Exception {
 		cart.checkOutOrder();
 		

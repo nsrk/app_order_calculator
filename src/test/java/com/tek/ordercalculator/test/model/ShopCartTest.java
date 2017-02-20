@@ -15,6 +15,10 @@ import static org.junit.Assert.*;
 
 import org.junit.After;
 
+/**
+ * @author Sivaramakrishna
+ *
+ */
 public class ShopCartTest {
 	
 	private static ShopCart shopCart;

@@ -49,7 +49,6 @@ public class Item {
 			return price;
 		}
 		
-		
 		/**
 		 * Method to validate the Item Constructor Arguments
 		 * 
@@ -86,7 +85,5 @@ public class Item {
 				itemType = ItemType.IMPORTED;
 			}
 			return itemType;
-		}
-	
-	
+		}	
 }

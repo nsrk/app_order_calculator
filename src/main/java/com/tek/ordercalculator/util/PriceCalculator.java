@@ -49,8 +49,8 @@ public class PriceCalculator {
 				totalTaxAmount+=orderTotalTax;
 				
 			}
-			System.out.println("Sum of Orders: "+grandTotal);
-			log.info("Sum of Orders is: "+grandTotal);
+			System.out.println("Sum of Orders: "+roundUptoTwoDecimalPlaces(grandTotal));
+			log.info("Sum of Orders is: "+roundUptoTwoDecimalPlaces(grandTotal));
 			
 		}
 		else{
@@ -106,10 +106,8 @@ public class PriceCalculator {
 	 * @return - rounded off value
 	 */
 	public static double roundUptoTwoDecimalPlaces(double value)
-	{
-		
+	{	
 		BigDecimal roundOffValue = new BigDecimal(value).setScale(2, RoundingMode.HALF_DOWN);
-		return roundOffValue.doubleValue();
-		
+		return roundOffValue.doubleValue();	
 	}
 }

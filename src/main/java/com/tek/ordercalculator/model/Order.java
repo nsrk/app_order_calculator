@@ -8,6 +8,10 @@ import org.slf4j.LoggerFactory;
 
 import com.tek.ordercalculator.main.OrderShopping;
 
+/**
+ * @author Sivaramakrishna
+ *
+ */
 public class Order {
 	
 	private static final Logger log = LoggerFactory.getLogger(Order.class); 
@@ -25,7 +29,6 @@ public class Order {
 		count++;
 	}
 	
-
 	/**
 	 * Method to get the orderNumber
 	 * 
@@ -34,8 +37,7 @@ public class Order {
 	public String getOrderNumber() {
 		return orderNumber;
 	}
-
-
+	
 	/**
 	 * Method to get the list of order lines
 	 * 

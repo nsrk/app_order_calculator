@@ -9,6 +9,10 @@ import com.tek.ordercalculator.model.ShopCart;
 import com.tek.ordercalculator.service.ShopCartService;
 import com.tek.ordercalculator.service.ShopCartServiceImpl;
 
+/**
+ * @author Sivaramakrishna
+ *
+ */
 public class ShopCartServiceImplTest {
 
 	private static ShopCartService shopCartService;
@@ -19,7 +23,7 @@ public class ShopCartServiceImplTest {
 	}
 	
 	@After
-	public void destroy()
+	public void clean()
 	{
 		shopCartService = null;
 	}

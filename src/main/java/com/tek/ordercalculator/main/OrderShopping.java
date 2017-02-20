@@ -25,26 +25,20 @@ public class OrderShopping {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		Map<String, Order> orderMap = new HashMap<String, Order>();
 		ShopCartService service = new ShopCartServiceImpl();
-
 		ShopCart cart = service.startTransaction();
 		
 		cart.addToCart("book", 12.49, 1);
 		cart.addToCart("music CD", 14.99, 1);
 		cart.addToCart("chocolate bar", 0.85, 1);
-
 		service.checkOutOrder();
 		log.info("Order 1 is checked out");
-		
 
 		cart.addToCart("imported box of chocolate", 10, 1);
 		cart.addToCart("imported bottle of perfume",47.50, 1);
-		
 		service.checkOutOrder();
 		log.info("Order 2 is checked out");
-	
-
+		
 		cart.addToCart("Imported bottle of perfume", 27.99, 1);
 		cart.addToCart("bottle of perfume", 18.99, 1);
 		cart.addToCart("packet of headache pills", 9.75, 1);

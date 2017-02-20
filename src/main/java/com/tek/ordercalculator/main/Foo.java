@@ -211,9 +211,7 @@ public class Foo {
 		// Bug Found: Spelling mistake in 'importd'
 		// c.add(new OrderLine(new Item("box of importd chocolates", (float) 11.25), 1));
 		c.add(new OrderLine(new Item("box of imported chocolates", (float) 11.25), 1));
-
 		o.put("Order 3", c);
-
 		new calculator().calculate(o);
 
 	}

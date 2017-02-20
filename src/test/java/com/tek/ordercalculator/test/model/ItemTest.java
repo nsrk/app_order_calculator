@@ -10,6 +10,10 @@ import org.junit.Before;
 import com.tek.ordercalculator.model.Item;
 import com.tek.ordercalculator.model.ItemType;
 
+/**
+ * @author Sivaramakrishna
+ *
+ */
 public class ItemTest {
 	
 	private static ItemType itemType;	
